@@ -1,0 +1,43 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* stylelint-enable */
+
+:root {
+  --background: #0a0e27;
+  --foreground: #e4e6eb;
+  --primary: #00ff9d;
+  --secondary: #00b8ff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Smooth scrolling animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Glitch animation */
+@keyframes glitch-skew {
+  0% { transform: skew(0deg); }
+  10% { transform: skew(10deg); }
+  20% { transform: skew(-10deg); }
+  30% { transform: skew(0deg); }
+  100% { transform: skew(0deg); }
+}
