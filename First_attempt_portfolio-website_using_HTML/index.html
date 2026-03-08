@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(58, 131, 131);
+            color: aliceblue;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 70px;
+            background-color: rgb(48, 110, 110);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+            font-size: 0.85rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 0.85rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(27, 206, 206);
+            font-size: 1rem;
+        }
+
+        main hr {
+            background: rgb(2 104 94);
+            margin: -104px 60px 10px 60px;
+            height: 0.15rem;
+            border: 0;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .right {
+            margin-left: 15%;
+        }
+
+        .first-section {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+        }
+
+        .first-section div {
+            width: 27%;
+        }
+
+        .left-section {
+            font-size: 1.10rem;
+        }
+
+        .circular-image {
+            width: 82%;
+            height: 68%;
+            border-radius: 85%;
+            object-fit: cover;
+            margin: 8px 3px 158px 35px;
+        }
+
+        .highlight {
+            color: rgb(95 225 225);
+        }
+
+        .second-section {
+            max-width: 84vw;
+            margin: auto;
+            height: 90vh
+        }
+
+        .second-section h1 {
+            font-size: 2rem;
+        }
+
+        .grey {
+            color: rgb(41 74 65);
+        }
+
+        .timeline {
+            background-color: aliceblue;
+            width: 80vw;
+            height: 2px;
+            margin: 25px 32px 12px;
+            display: flex;
+        }
+
+        .vertical {
+            background-color: aliceblue;
+            height: 65px;
+            width: 2px;
+            margin: 1px 107px;
+        }
+
+        .top-line {
+            color: rgb(66 207 185);
+            margin: -17px -13px 5px -41px;
+            font-size: 12px;
+            width: 100px;
+        }
+
+        .title {
+            margin: 65px -37px;
+            font-size: 12px;
+            width: 159px;
+
+        }
+
+        .description {
+            margin: -60px -80px;
+            font-size: 11px;
+            width: 187px;
+            color: #043d51;
+        }
+
+        footer {
+            background-color: rgb(24 78 72);
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 23px;
+            justify-content: space-between;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 800px;
+        }
+
+        .rights {
+            color: #8b8b8b;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .button {
+            padding: 4px;
+            position: relative;
+            height: 40px;
+            margin: 9px 8px;
+            background-color: rgb(30 170 149);
+            color: aliceblue;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        #element {
+            display: block;
+            min-height: 160px;
+        }
+
+        .typed-cursor {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><b>Fezaan's Portfolio</b></div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Conctact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="first-section">
+            <div class="left-section">
+                Hi, I'm <span class="highlight">Muhammad Fezaan Shamshad</span> — a Computer Science student at <span
+                    class="highlight">FAST NUCES</span> passionate about building
+                efficient, user-focused tech solutions.
+                <p>
+                    <span id="element"></span>
+                </p>
+
+                <button class="button"> Download Resume </button>
+            </div>
+
+            <div class="right-section">
+                <img src="faizan.jpg" alt="" class="circular-image">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="second-section">
+            <span class="grey">What i have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="timeline">
+                <div class="vertical">
+                    <div class="top-line"><b>first semester</b></div>
+                    <div class="title">Programming fundamentals</div>
+                    <div class="description">It was really a worderful that gives me insight about the logical thinking
+                        ,problem solving ,computing fundamentals and logic building.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="top-line"><b>first semester</b></div>
+                    <div class="title">Programming fundamentals</div>
+                    <div class="description">It was really a worderful that gives me insight about the logical thinking
+                        ,problem solving ,computing fundamentals and logic building.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="top-line"><b>first semester</b></div>
+                    <div class="title">Programming fundamentals</div>
+                    <div class="description">It was really a worderful that gives me insight about the logical thinking
+                        ,problem solving ,computing fundamentals and logic building.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="top-line"><b>first semester</b></div>
+                    <div class="title">Programming fundamentals</div>
+                    <div class="description">It was really a worderful that gives me insight about the logical thinking
+                        ,problem solving ,computing fundamentals and logic building.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div>
+                <h1>The Learner</h1>
+            </div>
+            <div>
+                <ul>
+                    <li>github</li>
+                    <li>linkedIn</li>
+                    <li>instagram</li>
+                    <li>snapchat</li>
+                </ul>
+            </div>
+        </div>
+        <div class="rights">
+            Copyright &copy fezaansportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <!--for the animation-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['From developing full-stack web apps with React and Node.js to crafting games in Assembly, I enjoy turning ideas into reality through code. Always learning, always building.'],
+            typeSpeed: 20,
+        });
+    </script>
+    <!--for the animation ends here-->
+</body>
+
+</html>
