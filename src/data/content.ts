@@ -109,7 +109,7 @@ import type { PersonalInfo} from '@/types';
 import { Project, RoadmapItem, SkillCategory } from '@/types';
 
 export const personalInfo = {
-  name: "Muhammad Fezaan", // Replace with your actual name
+  name: "Faizan naroo", // Replace with your actual name
   title: "Full-Stack Developer & AI Enthusiast",
   heroTagline: "Engineering Intelligent Systems from the Ground Up.",
   heroSubtitle: "Specializing in AI, Natural Language Processing, Computer Vision, and Full-Stack Development. Building scalable solutions that bridge cutting-edge research with production-ready applications.",
