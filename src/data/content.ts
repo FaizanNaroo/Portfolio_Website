@@ -36,8 +36,8 @@ export const projectsData: Project[] = [
     techStack: ["Python", "React", "Node.js", "REST APIs", "Tailwind CSS"],
     challenge: "Healthcare-related assistants must provide fast and clear responses while maintaining a simple user experience for diverse users.",
     solution: "Built a responsive full-stack application with structured prompt handling, clean UI flows, and API integration for reliable, low-latency interactions.",
-    githubUrl: "https://github.com/yourusername/medai",
-    liveUrl: ""
+    githubUrl: "https://github.com/Inter-AI-Club-Umt/ai-hackathon-techverse2-team-delta/commit/175008c4d03a4751dbaf5861e72fe9a8d7363827",
+    liveUrl: "https://faizannaroo.vercel.app/videos/MedAI.mp4"
   },
   {
     id: "faststay-dashboard",
@@ -56,8 +56,8 @@ export const projectsData: Project[] = [
     techStack: ["React", "TypeScript", "Next.js", "Tailwind CSS", "REST APIs"],
     challenge: "Users need a fast and clean way to discover movies, track what they want to watch, and explore trending content in one place.",
     solution: "Built a responsive movie platform with real-time API search, detailed movie pages, and watchlist flows. Optimized UX with clean information hierarchy and smooth interactions for quick browsing.",
-    githubUrl: "https://github.com/yourusername/moviemate",
-    liveUrl: ""
+    githubUrl: "https://github.com/FaizanNaroo/MovieMate",
+    liveUrl: "https://faizannaroo.vercel.app/videos/MovieMate.mp4"
   },
   {
     id: "flappy-bird",
@@ -66,7 +66,7 @@ export const projectsData: Project[] = [
     techStack: ["JavaScript", "HTML", "CSS"],
     challenge: "Recreating simple but responsive arcade gameplay requires precise collision detection and tuned jump/gravity behavior for a fair experience.",
     solution: "Implemented game loop timing, obstacle spawn logic, collision checks, and score progression with lightweight front-end code for fast load and smooth controls.",
-    githubUrl: "https://github.com/yourusername/flappy-bird",
+    githubUrl: "https://github.com/FaizanNaroo/FlappyBird",
 
   },
   {
@@ -76,8 +76,8 @@ export const projectsData: Project[] = [
     techStack: ["Python", "Dialogflow ES", "JavaScript", "HTML", "CSS"],
     challenge: "Building a chatbot that understands varied user queries while maintaining relevant, human-like responses across conversations.",
     solution: "Designed conversation flows, integrated intent/entity handling, and implemented a clean web chat interface with responsive behavior for smooth interaction.",
-    githubUrl: "https://github.com/yourusername/sam-chatbot",
-    liveUrl: "https://sam-chatbot-demo.vercel.app"
+    githubUrl: "",
+    liveUrl: "https://faizannaroo.vercel.app/videos/FlappyBird.mp4"
   },
 ];
 
