@@ -67,7 +67,7 @@ export const projectsData: Project[] = [
     challenge: "Recreating simple but responsive arcade gameplay requires precise collision detection and tuned jump/gravity behavior for a fair experience.",
     solution: "Implemented game loop timing, obstacle spawn logic, collision checks, and score progression with lightweight front-end code for fast load and smooth controls.",
     githubUrl: "https://github.com/FaizanNaroo/FlappyBird",
-
+    liveUrl: "https://faizannaroo.vercel.app/videos/FlappyBird.mp4",
   },
   {
     id: "sam-chatbot",
@@ -76,8 +76,7 @@ export const projectsData: Project[] = [
     techStack: ["Python", "Dialogflow ES", "JavaScript", "HTML", "CSS"],
     challenge: "Building a chatbot that understands varied user queries while maintaining relevant, human-like responses across conversations.",
     solution: "Designed conversation flows, integrated intent/entity handling, and implemented a clean web chat interface with responsive behavior for smooth interaction.",
-    githubUrl: "",
-    liveUrl: "https://faizannaroo.vercel.app/videos/FlappyBird.mp4"
+    liveUrl: "https://faizannaroo.vercel.app/videos/SamChatbot.mp4"
   },
 ];
 
