@@ -76,7 +76,7 @@ export const projectsData: Project[] = [
     techStack: ["Python", "Dialogflow ES", "JavaScript", "HTML", "CSS"],
     challenge: "Building a chatbot that understands varied user queries while maintaining relevant, human-like responses across conversations.",
     solution: "Designed conversation flows, integrated intent/entity handling, and implemented a clean web chat interface with responsive behavior for smooth interaction.",
-    liveUrl: "https://faizannaroo.vercel.app/videos/SamChatbot.mp4"
+    liveUrl: "https://faizannaroo.vercel.app/videos/Sam_Chatbot.mp4"
   },
 ];
 
