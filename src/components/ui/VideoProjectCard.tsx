@@ -14,7 +14,6 @@ import {
   Pause,
   Volume2,
   VolumeX,
-  Maximize2,
   Loader2
 } from 'lucide-react';
 
@@ -44,6 +43,7 @@ interface VideoProjectCardProps {
 
 const VideoProjectCard = ({ project, index }: VideoProjectCardProps) => {
   const [isExpanded, setIsExpanded]   = useState(false);
+  const [showFullDescription, setShowFullDescription] = useState(false);
   const [isPlaying, setIsPlaying]     = useState(false);
   const [isMuted, setIsMuted]         = useState(true);
   const [loadState, setLoadState]     = useState<LoadState>('idle');
@@ -210,14 +210,6 @@ const VideoProjectCard = ({ project, index }: VideoProjectCardProps) => {
     setIsMuted(!isMuted);
   };
 
-  const handleFullscreen = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (!videoRef.current) return;
-
-    if (videoRef.current.requestFullscreen) {
-      videoRef.current.requestFullscreen();
-    }
-  };
 
   const getTechColor = (tech: string) => {
     const colors: Record<string, string> = {
@@ -343,12 +335,6 @@ const VideoProjectCard = ({ project, index }: VideoProjectCardProps) => {
                   </button>
                 </div>
 
-                <button
-                  onClick={handleFullscreen}
-                  className="p-2 bg-white/20 hover:bg-primary/50 rounded-lg backdrop-blur-sm transition-all"
-                >
-                  <Maximize2 className="w-4 h-4 text-white" />
-                </button>
               </div>
             </div>
           </div>
@@ -372,9 +358,15 @@ const VideoProjectCard = ({ project, index }: VideoProjectCardProps) => {
         {/* Content Section */}
         <div className="p-6">
           {/* Description */}
-          <p className="text-muted-foreground mb-4 line-clamp-2">
+          <p className={`text-muted-foreground mb-2 ${showFullDescription ? '' : 'line-clamp-2'}`}>
             {project.description}
           </p>
+          <button
+            onClick={() => setShowFullDescription(!showFullDescription)}
+            className="text-sm text-muted-foreground hover:text-primary transition-colors mb-4"
+          >
+            {showFullDescription ? 'Show less' : 'Read more'}
+          </button>
 
           {/* Tech Stack */}
           <div className="flex flex-wrap gap-2 mb-4">
@@ -390,6 +382,18 @@ const VideoProjectCard = ({ project, index }: VideoProjectCardProps) => {
 
           {/* Links */}
           <div className="flex items-center gap-2 mb-4">
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-emerald-600 text-white hover:bg-emerald-500 shadow-sm shadow-emerald-600/30 transition-all"
+                aria-label="Live demo"
+              >
+                <ExternalLink className="w-4 h-4" />
+                <span className="text-sm font-semibold">Live Demo</span>
+              </a>
+            )}
             {project.githubUrl && (
               <a
                 href={project.githubUrl}
@@ -399,17 +403,6 @@ const VideoProjectCard = ({ project, index }: VideoProjectCardProps) => {
                 aria-label="GitHub repository"
               >
                 <Github className="w-4 h-4" />
-              </a>
-            )}
-            {project.liveUrl && (
-              <a
-                href={project.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 text-muted-foreground hover:text-primary hover:bg-primary/10 rounded-lg transition-all"
-                aria-label="Live demo"
-              >
-                <ExternalLink className="w-4 h-4" />
               </a>
             )}
           </div>
