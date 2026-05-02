@@ -21,6 +21,17 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Ensure fullscreen videos are not cropped */
+video:fullscreen,
+video:-webkit-full-screen,
+video:-moz-full-screen,
+video:-ms-fullscreen {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+
 /* Smooth scrolling animation */
 @keyframes fadeInUp {
   from {
