@@ -50,6 +50,16 @@ export const projectsData: Project[] = [
     liveUrl: "https://faststay.vercel.app"
   },
   {
+    id: "Arhtiya_ledger",
+    title: "Arhtiya Ledger",
+    description: "A production-grade ledger and transaction management system for agricultural commission businesses.",
+    techStack: ["Django", "Django REST Framework", "React", "SQLite", "Tailwind CSS"],
+    challenge: "Traditional commission shops rely on manual bookkeeping, making it difficult to maintain accurate multi-party balances, commissions, and transaction histories.",
+    solution: "Engineered a full-stack system with rule-based balance automation for crop trades, item exchanges, and cash transactions. Integrated system-controlled accounts for commission tracking, ensured data consistency on create updates/deletes, and built a dashboard with actionable financial insights. Delivered a scalable API-driven architecture with a responsive frontend for real-world usage.",
+    githubUrl: "https://github.com/FaizanNaroo/Arhtiya_ledger.git",
+    liveUrl: "https://faizannaroo.vercel.app/videos/Arhtiya_ledger.mp4"
+  },
+  {
     id: "moviemate",
     title: "MovieMate",
     description: "A movie discovery and recommendation web app with search, watchlist management, and trending insights.",

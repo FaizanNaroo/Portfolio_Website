@@ -12,6 +12,7 @@ import { Filter, Github, X, Film } from 'lucide-react';
 const projectsWithVideos = projectsData.map(project => ({
   ...project,
   videoUrl: project.id === 'faststay-dashboard' ? '/videos/FastStay.mp4' :
+            project.id === 'Arhtiya_ledger' ? '/videos/Arhtiya_ledger.mp4' :
             project.id === 'moviemate' ? '/videos/MovieMate.mp4' :
             project.id === 'flappy-bird' ? '/videos/FlappyBird.mp4' :
             project.id === 'sam-chatbot' ? '/videos/Sam_Chatbot.mp4' :
