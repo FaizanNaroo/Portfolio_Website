@@ -4,6 +4,7 @@
 import { motion } from 'framer-motion';
 import { Heart, Github, Linkedin, Twitter, Mail, ArrowUp } from 'lucide-react';
 import Link from 'next/link';
+import ResumeMenu from '@/components/ui/ResumeMenu';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -56,14 +57,7 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="/resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  Resume
-                </a>
+                <ResumeMenu label="Resume" variant="footerLink" align="left" />
               </li>
               <li>
                 <a

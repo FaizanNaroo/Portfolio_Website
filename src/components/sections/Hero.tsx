@@ -7,6 +7,7 @@ import { PersonalInfo } from '@/types';
 import { Mail, Code2, Brain, Download, Eye } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import ResumeMenu from '@/components/ui/ResumeMenu';
 
 const Hero = () => {
   // Type assertion for safety
@@ -93,25 +94,21 @@ const Hero = () => {
           </Link>
 
           {/* Download — secondary blue fill */}
-          <a
-            href="/resume.pdf"
-            download="Faizan_Naroo_Resume.pdf"
-            className="group flex items-center gap-2 px-6 py-3 rounded-xl bg-secondary text-[#0a0e27] font-semibold text-sm transition-all duration-300 hover:brightness-110 hover:shadow-[0_0_22px_#00b8ff55] active:scale-95"
-          >
-            <Download className="w-4 h-4 transition-transform duration-300 group-hover:-translate-y-0.5" />
-            Download CV
-          </a>
+          <ResumeMenu
+            label="Download CV"
+            variant="heroDownload"
+            align="center"
+            download
+            leadingIcon={Download}
+          />
 
           {/* Preview — gradient outline pill */}
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-primary/15 to-secondary/15 border border-primary/30 text-foreground font-semibold text-sm transition-all duration-300 hover:from-primary/25 hover:to-secondary/25 hover:border-secondary/60 hover:shadow-[0_0_18px_#00b8ff30] active:scale-95"
-          >
-            <Eye className="w-4 h-4 text-secondary transition-transform duration-300 group-hover:scale-110" />
-            Preview CV
-          </a>
+          <ResumeMenu
+            label="Preview CV"
+            variant="heroPreview"
+            align="center"
+            leadingIcon={Eye}
+          />
         </motion.div>
 
 

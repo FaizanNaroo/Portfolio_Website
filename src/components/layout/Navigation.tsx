@@ -22,9 +22,7 @@ import {
   Github,
   Linkedin,
   Mail,
-  ChevronDown,
   Sparkles,
-  FileText,
   User,
   Code2,
   Briefcase,
@@ -32,6 +30,7 @@ import {
   Send
 } from 'lucide-react';
 import Link from 'next/link';
+import ResumeMenu from '@/components/ui/ResumeMenu';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -152,21 +151,7 @@ const Navigation = () => {
             {/* Right Side - Resume & Social */}
             <div className="hidden md:flex items-center gap-3">
               {/* Resume Button */}
-              <motion.a
-                href="/resume.pdf"
-                download="Muhammad Fezaan Shamshad.pdf"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="group relative px-4 py-2 overflow-hidden"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
-                <div className="absolute inset-0 bg-primary/10 rounded-lg group-hover:bg-transparent transition-colors" />
-                <div className="relative flex items-center gap-2 text-foreground group-hover:text-primary-foreground transition-colors z-10">
-                  <FileText className="w-4 h-4" />
-                  <span className="text-sm font-medium">Resume</span>
-                  <ChevronDown className="w-3 h-3 group-hover:rotate-180 transition-transform" />
-                </div>
-              </motion.a>
+              <ResumeMenu label="Resume" variant="nav" align="right" />
 
               {/* Social Icons with Tooltips */}
               <div className="flex items-center gap-1 border-l border-primary/20 pl-3">
@@ -296,22 +281,12 @@ const Navigation = () => {
                   className="pt-6 border-t border-primary/10"
                 >
                   {/* Resume Button */}
-                  <a
-                    href="/resume.pdf"
-                    download="Faizan_Naroo_Resume.pdf"
-                    className="flex items-center justify-between w-full p-3 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg border border-primary/20 mb-4 group"
-                  >
-                    <div className="flex items-center gap-3">
-                      <div className="p-2 bg-primary/20 rounded-lg group-hover:scale-110 transition-transform">
-                        <FileText className="w-4 h-4 text-primary" />
-                      </div>
-                      <div>
-                        <p className="font-medium text-foreground">Download Resume</p>
-                        <p className="text-xs text-muted-foreground">PDF · Updated 2024</p>
-                      </div>
-                    </div>
-                    <ChevronDown className="w-4 h-4 text-primary rotate-270 group-hover:translate-x-1 transition-transform" />
-                  </a>
+                  <ResumeMenu
+                    label="Download Resume"
+                    variant="mobile"
+                    align="left"
+                    download
+                  />
 
                   {/* Social Links */}
                   <div className="grid grid-cols-3 gap-2">
