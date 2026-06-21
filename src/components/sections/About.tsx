@@ -224,7 +224,7 @@ const About = () => {
             {/* Name and Title */}
             <div>
               <h3 className="text-3xl font-bold text-foreground mb-2">
-                Mhummad <span className="text-primary">Fezaan</span>
+                Muhammad <span className="text-primary">Fezaan</span>
               </h3>
               <p className="text-xl text-muted-foreground">
                 Computer Science Student at{' '}
